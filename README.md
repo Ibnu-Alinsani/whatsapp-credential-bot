@@ -94,6 +94,7 @@ graph TD
 | `logout`                         | Logout from current PIN session      |
 | `status`                         | Check current session status         |
 | `riwayat`                        | View recent command history          |
+| `bantuan, menu, atau ?`                        | View all available command          |
 
 ---
 
