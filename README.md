@@ -54,14 +54,14 @@ Lihat terminal. Scan QR dengan WhatsApp kamu untuk login.
 
 | Perintah                | Deskripsi                           |
 |-------------------------|-------------------------------------|
-| `simpan nama isi`       | Simpan kredensial                   |
-| `lihat nama`            | Ambil kembali kredensial            |
-| `hapus nama`            | Hapus kredensial                    |
+| `simpan <nama kredensial> <isi>`       | Simpan kredensial                   |
+| `lihat <nama kredensial>`            | Ambil kembali kredensial            |
+| `hapus <nama kredensial>`            | Hapus kredensial                    |
 | `list`                  | Daftar semua kredensial             |
 | `export`                | Ekspor semua kredensial (file)      |
 | kirim file `.txt`       | Impor data dari backup              |
-| `setpin 1234`           | Atur PIN pribadi                    |
-| `verifikasi 1234`       | Verifikasi sesi PIN                 |
+| `setpin <pin>`           | Atur PIN pribadi                    |
+| `verifikasi <pin>`       | Verifikasi sesi PIN                 |
 | `logout`                | Logout dari sesi PIN                |
 | `status`                | Status sesi saat ini                |
 | `riwayat`               | Riwayat aktivitas terbaru           |
