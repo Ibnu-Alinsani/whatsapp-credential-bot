@@ -17,6 +17,7 @@ import './commands/verifikasi';
 import './commands/logout';
 import './commands/status';
 import './commands/riwayat';
+import './commands/bantuan';
 
 export function startBot() {
   const client = new Client({
