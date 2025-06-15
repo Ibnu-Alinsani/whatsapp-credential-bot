@@ -62,6 +62,23 @@ Check the terminal. Scan the displayed QR code using your WhatsApp to log in.
 
 ---
 
+## 🔄 Flow Diagram
+
+```mermaid
+graph TD
+  A[Start Bot] --> B{Authorized User?}
+  B -- No --> C[Reject Message]
+  B -- Yes --> D{Sensitive Command?}
+  D -- Yes --> E{Session Verified?}
+  E -- No --> F[Prompt to Verify PIN]
+  E -- Yes --> G[Execute Command]
+  D -- No --> G[Execute Command]
+  G --> H[Log Action to Audit Table]
+  H --> I[Respond to User]
+```
+
+---
+
 ## 🔐 Example Commands
 
 | Command                        | Description                           |
@@ -104,6 +121,23 @@ Check the terminal. Scan the displayed QR code using your WhatsApp to log in.
 - All credential data is encrypted using symmetric encryption (keep `ENCRYPTION_KEY` secure)
 - Login QR codes are saved in the `.wwebjs_auth/` directory
 - PIN verification currently lacks session-aware optimization; repeated verification may create multiple session rows in the database
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how you can help:
+
+1. Fork this repository
+2. Create a new branch
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and test them locally
+4. Commit and push to your fork
+5. Open a pull request (PR) describing your changes
+
+Please follow the coding conventions already in place and write clean, understandable commits. Contributions related to testing, security, and extensibility are highly appreciated!
 
 ---
 
