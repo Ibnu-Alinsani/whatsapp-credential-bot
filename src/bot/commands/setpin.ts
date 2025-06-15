@@ -5,7 +5,7 @@ import { hashPin } from '../../utils/pin';
 
 registerCommand('setpin', async ({ msg, args, phone }) => {
   if (args.length !== 1 || !/^\d{4}$/.test(args[0])) {
-    await msg.reply('❌ Format salah. Gunakan: setpin <4 digit>');
+    await msg.reply('❌ Format salah. \n\nGunakan: setpin <4 digit>');
     return;
   }
 

@@ -4,7 +4,7 @@ import { db } from '../../db/client';
 
 registerCommand('hapus', async ({ msg, args, phone }) => {
   if (args.length !== 1) {
-    await msg.reply('❌ Format salah. Gunakan: hapus <nama>');
+    await msg.reply('❌ Format salah. \n\nGunakan: hapus <nama>');
     return;
   }
 

@@ -6,7 +6,7 @@ import { setVerified } from '../../utils/session';
 
 registerCommand('verifikasi', async ({ msg, args, phone }) => {
   if (args.length !== 1 || !/^\d{4}$/.test(args[0])) {
-    await msg.reply('❌ Format salah. Gunakan: verifikasi <4 digit>');
+    await msg.reply('❌ Format salah. \n\nGunakan: verifikasi <pin>');
     return;
   }
 
@@ -16,7 +16,7 @@ registerCommand('verifikasi', async ({ msg, args, phone }) => {
   );
 
   if (result.rowCount === 0) {
-    await msg.reply('❌ Kamu belum pernah set PIN. Gunakan: setpin <4 digit>');
+    await msg.reply('❌ Kamu belum pernah set PIN. \n\nGunakan: setpin <4 digit angka>');
     return;
   }
 

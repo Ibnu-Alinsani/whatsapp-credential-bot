@@ -5,7 +5,7 @@ import { decrypt } from '../../utils/crypto';
 
 registerCommand('lihat', async ({ msg, args, phone }) => {
   if (args.length !== 1) {
-    await msg.reply('❌ Format salah. Gunakan: lihat <nama>');
+    await msg.reply('❌ Format salah. \n\nGunakan: lihat <nama>');
     return;
   }
 

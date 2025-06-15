@@ -5,7 +5,7 @@ import { encrypt } from '../../utils/crypto';
 
 registerCommand('simpan', async ({ msg, args, phone }) => {
   if (args.length < 2) {
-    await msg.reply('❌ Format salah. Gunakan: simpan <nama> <kredensial>');
+    await msg.reply('❌ Format salah. \n\nGunakan: simpan <nama> <kredensial>');
     return;
   }
 
