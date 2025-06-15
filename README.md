@@ -39,7 +39,13 @@ cd whatsapp-credential-bot
 docker compose up --build
 ```
 
-Bot akan otomatis:
+### 3. Atau dengan bun runtime
+```bash
+bun install
+bun run dev
+```
+
+Dengan Docker, bot akan otomatis:
 - Menginstall dependencies
 - Build TypeScript ke JavaScript (`dist/`)
 - Menjalankan bot dan database PostgreSQL
